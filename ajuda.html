@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ajuda - Loja de Cupcakes</title>
+</head>
+<body>
+
+    <header>
+        <a href="./index.html" id="logo">
+            <img src="./img/logo.png" alt="Logo Loja Online">
+        </a>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./geral.html">Geral</a>
+            <a href="./ajuda.html">Ajuda</a>
+            <a href="./carrinho.html" id="cart-icon">🛒 Carrinho (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <div id="catalog-title">
+        <h2>CENTRAL DE AJUDA E CONTATO</h2>
+    </div>
+
+    <form action="#" method="POST" class="form-container">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem... (máximo 300 caracteres)" rows="5" maxlength="300" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 Loja Online. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="./termo.html">Termos de Uso</a>
+          <a href="./termo.html">Política de Privacidade</a>
+          <a href="./ajuda.html">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

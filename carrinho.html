@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carrinho de Compras - Loja de Cupcakes</title>
+</head>
+<body>
+
+<header>
+    <a href="./index.html" id="logo">
+        <img src="./img/logo.png" alt="Logo Loja Online">
+    </a>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./geral.html">Geral</a>
+        <a href="./ajuda.html">Ajuda</a>
+        <a href="./carrinho.html" id="cart-icon">🛒 Carrinho (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<main class="cart-container">
+    <div id="catalog-title">
+        <h2>SEU CARRINHO DE COMPRAS</h2>
+    </div>
+
+    <div id="cart-items" style="padding: 20px; max-width: 800px; margin: 0 auto;">
+        <!-- Os itens adicionados aparecerão aqui dinamicamente -->
+    </div>
+
+    <div class="cart-summary" style="text-align: center; margin: 30px auto; max-width: 500px; padding: 25px; background-color: #111; border: 1px solid #333; border-radius: 20px;">
+        <h3 style="color: white; margin-bottom: 15px;">Resumo do Pedido</h3>
+        <p style="color: aqua; font-size: 22px; margin-bottom: 20px;">Total: <strong id="cart-total">R$ 0,00</strong></p>
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button id="btn-checkout" style="background-color: aqua; color: black; font-weight: bold; height: 45px; width: 180px; border: none; border-radius: 8px; cursor: pointer;">Finalizar Compra</button>
+            <button id="btn-clear" style="background-color: #222; color: white; font-weight: bold; height: 45px; width: 180px; border: 1px solid #444; border-radius: 8px; cursor: pointer;">Esvaziar Carrinho</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Loja Online. Todos os direitos reservados.</p>
+    <div class="footer-links">
+      <a href="./termo.html">Termos de Uso</a>
+      <a href="./termo.html">Política de Privacidade</a>
+      <a href="./ajuda.html">Contato</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

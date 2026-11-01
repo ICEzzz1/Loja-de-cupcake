@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: black;
+  min-height: 85px;
+  height: auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #222;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 30px 60px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header a:hover {
+  background-color: aqua;
+  color: black;
+}
+
+#logo {
+  padding: 0; 
+}
+
+#logo img {
+  height: 60px;
+  object-fit: contain;
+}
+
+header #logo:hover {
+  background-color: transparent;
+}
+
+/* catalog */
+
+#catalog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  color: aqua;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;        
+  max-width: 350px;      
+  height: 420px;
+  margin: 10px;
+  color: white;
+  border-radius: 20px;
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 15px;
+}
+
+.product-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+.product img {
+  height: 220px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.product img:hover {
+  border: 3px solid aqua;
+  transform: translateY(-4px);
+}
+
+.product button {
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+  height: 45px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.product button:hover {
+  background-color: white;
+  color: black;
+}
+
+section p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: aqua;
+}
+
+article h3 {
+  margin-top: 15px;
+  color: white;
+}
+
+/* Estilização do Formulário de Ajuda */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.1);
+}
+
+.form-container div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: aqua;
+}
+
+.form-container button {
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Estilização da Página de Detalhes do Produto */
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-image-box {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.product-image-box img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-info-box {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-info-box h2 {
+  color: white;
+  font-size: 28px;
+}
+
+.product-info-box .product-price {
+  color: aqua;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-description {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.product-info-box .btn-buy {
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.product-info-box .btn-buy:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 25px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #222;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-content p {
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: aqua;
+}
+
+@keyframes blinkAqua {
+  0% {
+    background-color: aqua;
+    color: black;
+  }
+  100% {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+.cart-blink {
+  animation: blinkAqua 0.6s ease-in-out;
+}
+
+/* Dispositivos Móveis e Tablets Pequenos */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  header nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header a {
+    width: 100%; 
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  #logo img {
+    height: 50px;
+  }
+
+  .product {
+    max-width: 90%;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
