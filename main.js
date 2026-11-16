@@ -78,18 +78,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = params.get("id") || "1";
 
     const produtos = {
-      "1": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake1.png" },
-      "2": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake2.png" },
-      "3": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake3.png" },
-      "4": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake2.png" },
-      "5": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake3.png" },
-      "6": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake3.png" },
-      "7": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake2.png" },
-      "8": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake1.png" },
-      "9": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake3.png" },
-      "10": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake1.png" },
-      "11": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake2.png" },
-      "12": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake3.png" }
+      "1": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake1.png" },
+      "2": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake2.png" },
+      "3": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake3.png" },
+      "4": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake2.png" },
+      "5": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake3.png" },
+      "6": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake3.png" },
+      "7": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake2.png" },
+      "8": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake1.png" },
+      "9": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake3.png" },
+      "10": { name: "Cupcake de Chocolate", price: 15.00, img: "./img/cupcake1.png" },
+      "11": { name: "Cupcake de Morango", price: 10.00, img: "./img/cupcake2.png" },
+      "12": { name: "Cupcake de Baunilha", price: 12.00, img: "./img/cupcake3.png" }
     };
 
     const produto = produtos[id] || produtos["1"];
